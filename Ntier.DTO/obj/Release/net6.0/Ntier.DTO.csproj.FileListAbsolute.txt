@@ -1,0 +1,12 @@
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\bin\Release\net6.0\Ntier.DTO.deps.json
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\bin\Release\net6.0\Ntier.DTO.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\bin\Release\net6.0\Ntier.DTO.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\Ntier.DTO.csproj.AssemblyReference.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\Ntier.DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\Ntier.DTO.AssemblyInfoInputs.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\Ntier.DTO.AssemblyInfo.cs
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\Ntier.DTO.csproj.CoreCompileInputs.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\Ntier.DTO.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\refint\Ntier.DTO.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\Ntier.DTO.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.DTO\obj\Release\net6.0\ref\Ntier.DTO.dll

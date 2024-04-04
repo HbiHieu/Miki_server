@@ -1,0 +1,17 @@
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\bin\Release\net6.0\Ntier.BLL.deps.json
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\bin\Release\net6.0\Ntier.BLL.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\bin\Release\net6.0\Ntier.BLL.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\bin\Release\net6.0\Ntier.DAL.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\bin\Release\net6.0\Ntier.DTO.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\bin\Release\net6.0\Ntier.DAL.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\bin\Release\net6.0\Ntier.DTO.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\Ntier.BLL.csproj.AssemblyReference.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\Ntier.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\Ntier.BLL.AssemblyInfoInputs.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\Ntier.BLL.AssemblyInfo.cs
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\Ntier.BLL.csproj.CoreCompileInputs.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\Ntier.BLL.csproj.CopyComplete
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\Ntier.BLL.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\refint\Ntier.BLL.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\Ntier.BLL.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Release\net6.0\ref\Ntier.BLL.dll

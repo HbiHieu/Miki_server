@@ -1,0 +1,17 @@
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\bin\Release\net6.0\Ntier.DAL.deps.json
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\bin\Release\net6.0\Ntier.DAL.runtimeconfig.json
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\bin\Release\net6.0\Ntier.DAL.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\bin\Release\net6.0\Ntier.DAL.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\bin\Release\net6.0\Ntier.DTO.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\bin\Release\net6.0\Ntier.DTO.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.csproj.AssemblyReference.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.AssemblyInfoInputs.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.AssemblyInfo.cs
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.csproj.CoreCompileInputs.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.csproj.CopyComplete
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\refint\Ntier.DAL.dll
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.pdb
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\Ntier.DAL.genruntimeconfig.cache
+C:\coode\Miki\Miki_Shop\server\Ntier.DAL\obj\Release\net6.0\ref\Ntier.DAL.dll
