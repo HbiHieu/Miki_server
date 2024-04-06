@@ -2250,11 +2250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\Ntier.DAL.csproj",
+      "projectUniqueName": "C:\\coode\\CodeDeDayLen\\server\\Ntier.DAL\\Ntier.DAL.csproj",
       "projectName": "Ntier.DAL",
-      "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\Ntier.DAL.csproj",
+      "projectPath": "C:\\coode\\CodeDeDayLen\\server\\Ntier.DAL\\Ntier.DAL.csproj",
       "packagesPath": "C:\\Users\\ToilaHieu\\.nuget\\packages\\",
-      "outputPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\obj\\",
+      "outputPath": "C:\\coode\\CodeDeDayLen\\server\\Ntier.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -2274,8 +2274,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj": {
-              "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj"
+            "C:\\coode\\CodeDeDayLen\\server\\Ntier.DTO\\Ntier.DTO.csproj": {
+              "projectPath": "C:\\coode\\CodeDeDayLen\\server\\Ntier.DTO\\Ntier.DTO.csproj"
             }
           }
         }

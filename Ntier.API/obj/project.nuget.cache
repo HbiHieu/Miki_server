@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xNOoDIg0ecC3F9V720NfSden77HGUEtmp0Mg5MaWmNrxHLy+DmtuSzjBUULvRiGFQ0JTUa+QuTVmdfmBZYekbg==",
+  "dgSpecHash": "8l0v/9KHVFSf1WUiTISlKZ1iQWiJKBLUEq4SOUpBwWPf9vUHSWy/cNkF4FvczQRZxUlkiXBCUJv9mnnB4cOjFQ==",
   "success": true,
-  "projectFilePath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.API\\Ntier.API.csproj",
+  "projectFilePath": "C:\\coode\\CodeDeDayLen\\server\\Ntier.API\\Ntier.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

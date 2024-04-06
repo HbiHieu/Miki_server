@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3z7OhKP3BAaZop2nYkw0qrCNARQOt4Y4EQBp8K9hqrpLf4QlVtnZxXNzyGLAYcCaGWo/eNdeDIx3qYB5mskIFQ==",
+  "dgSpecHash": "zmCVu3TDZAp/QJQaSwIdNtLKAsCUmvW3GVCxnSv+omaEz7NkoYjKAXUhC7XdV9uuI9uikBqVntuCI0x4rhZy1Q==",
   "success": true,
-  "projectFilePath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.BLL\\Ntier.BLL.csproj",
+  "projectFilePath": "C:\\coode\\CodeDeDayLen\\server\\Ntier.BLL\\Ntier.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
