@@ -42,6 +42,7 @@ namespace Ntier.DAL.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<OrderDetail>();
             modelBuilder.Entity<Cart>(entity =>
             {
                 entity.ToTable("CART");

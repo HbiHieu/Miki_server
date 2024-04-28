@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8l0v/9KHVFSf1WUiTISlKZ1iQWiJKBLUEq4SOUpBwWPf9vUHSWy/cNkF4FvczQRZxUlkiXBCUJv9mnnB4cOjFQ==",
+  "dgSpecHash": "n+hiivA2mKTLvdSP5YjXaDVZg15R3kR5XxZ/O5FVfpIsjFf7Johsf3MKzE7sY1pmjnBFaSZlFKl0MS49FGmhZw==",
   "success": true,
   "projectFilePath": "C:\\coode\\CodeDeDayLen\\server\\Ntier.API\\Ntier.API.csproj",
   "expectedPackageFiles": [
@@ -59,7 +59,7 @@
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
-    "C:\\Users\\ToilaHieu\\.nuget\\packages\\system.data.sqlclient\\4.8.5\\system.data.sqlclient.4.8.5.nupkg.sha512",
+    "C:\\Users\\ToilaHieu\\.nuget\\packages\\system.data.sqlclient\\4.8.6\\system.data.sqlclient.4.8.6.nupkg.sha512",
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\ToilaHieu\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
