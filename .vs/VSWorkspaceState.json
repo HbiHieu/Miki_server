@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Ntier.BLL",
+    "\\Ntier.BLL\\Interfaces",
+    "\\Ntier.BLL\\Services",
+    "\\Ntier.DAL",
+    "\\Ntier.DAL\\Context",
+    "\\Ntier.DAL\\Interfaces",
+    "\\Ntier.DAL\\Repositories",
+    "\\Ntier.DTO",
+    "\\Ntier.DTO\\DTO"
+  ],
+  "SelectedNode": "\\Ntier.API\\Controllers\\UsersController.cs",
+  "PreviewInSolutionExplorer": false
+}

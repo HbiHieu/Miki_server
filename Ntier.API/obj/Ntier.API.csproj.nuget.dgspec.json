@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.API\\Ntier.API.csproj": {}
+    "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.API\\Ntier.API.csproj": {}
   },
   "projects": {
-    "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.API\\Ntier.API.csproj": {
+    "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.API\\Ntier.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.API\\Ntier.API.csproj",
+        "projectUniqueName": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.API\\Ntier.API.csproj",
         "projectName": "Ntier.API",
-        "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.API\\Ntier.API.csproj",
-        "packagesPath": "C:\\Users\\ToilaHieu\\.nuget\\packages\\",
-        "outputPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.API\\obj\\",
+        "projectPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.API\\Ntier.API.csproj",
+        "packagesPath": "C:\\Users\\Tan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ToilaHieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.BLL\\Ntier.BLL.csproj": {
-                "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.BLL\\Ntier.BLL.csproj"
+              "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.BLL\\Ntier.BLL.csproj": {
+                "projectPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.BLL\\Ntier.BLL.csproj"
               }
             }
           }
@@ -47,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
             "Microsoft.AspNet.Cors": {
               "target": "Package",
               "version": "[5.2.9, )"
@@ -75,24 +77,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.BLL\\Ntier.BLL.csproj": {
+    "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.BLL\\Ntier.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.BLL\\Ntier.BLL.csproj",
+        "projectUniqueName": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.BLL\\Ntier.BLL.csproj",
         "projectName": "Ntier.BLL",
-        "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.BLL\\Ntier.BLL.csproj",
-        "packagesPath": "C:\\Users\\ToilaHieu\\.nuget\\packages\\",
-        "outputPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.BLL\\obj\\",
+        "projectPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.BLL\\Ntier.BLL.csproj",
+        "packagesPath": "C:\\Users\\Tan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.BLL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ToilaHieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,11 +105,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\Ntier.DAL.csproj": {
-                "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\Ntier.DAL.csproj"
+              "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DAL\\Ntier.DAL.csproj": {
+                "projectPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DAL\\Ntier.DAL.csproj"
               },
-              "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj": {
-                "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj"
+              "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DTO\\Ntier.DTO.csproj": {
+                "projectPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DTO\\Ntier.DTO.csproj"
               }
             }
           }
@@ -141,6 +140,10 @@
               "target": "Package",
               "version": "[1.21.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.11, )"
@@ -162,24 +165,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\Ntier.DAL.csproj": {
+    "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DAL\\Ntier.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\Ntier.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DAL\\Ntier.DAL.csproj",
         "projectName": "Ntier.DAL",
-        "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\Ntier.DAL.csproj",
-        "packagesPath": "C:\\Users\\ToilaHieu\\.nuget\\packages\\",
-        "outputPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DAL\\obj\\",
+        "projectPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DAL\\Ntier.DAL.csproj",
+        "packagesPath": "C:\\Users\\Tan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tan\\Source\\Repos\\Miki_server\\Ntier.DAL\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ToilaHieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -193,8 +193,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj": {
-                "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj"
+              "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DTO\\Ntier.DTO.csproj": {
+                "projectPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DTO\\Ntier.DTO.csproj"
               }
             }
           }
@@ -209,6 +209,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.11, )"
@@ -254,24 +258,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj": {
+    "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DTO\\Ntier.DTO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj",
+        "projectUniqueName": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DTO\\Ntier.DTO.csproj",
         "projectName": "Ntier.DTO",
-        "projectPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj",
-        "packagesPath": "C:\\Users\\ToilaHieu\\.nuget\\packages\\",
-        "outputPath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\obj\\",
+        "projectPath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DTO\\Ntier.DTO.csproj",
+        "packagesPath": "C:\\Users\\Tan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tan\\Source\\Repos\\Miki_server\\Ntier.DTO\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ToilaHieu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -296,6 +297,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -312,7 +319,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

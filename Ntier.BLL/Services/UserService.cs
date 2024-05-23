@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
+using MailKit.Net.Smtp;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using MimeKit;
 using Ntier.BLL.Interfaces;
 using Ntier.DAL.Entities;
 using Ntier.DAL.Interfaces;
@@ -77,7 +80,7 @@ namespace Ntier.BLL.Services
             }
             else
             {
-                throw new ArgumentException("Icorrect Email or password");
+                throw new ArgumentException("Incorrect Email or password");
             }
         }
 
@@ -139,6 +142,24 @@ namespace Ntier.BLL.Services
             else
             {
                 throw new ArgumentException("UserId is invalid");
+            }
+        }
+        public async Task SendEmailAsync(string recipientEmail, string subject, string messageBody)
+        {
+            var EmailMessage = new MimeMessage();
+            EmailMessage.From.Add(new MailboxAddress("MiKi Shop", "noreply91203@gmail.com"));
+            EmailMessage.To.Add(new MailboxAddress("", recipientEmail));
+            EmailMessage.Subject = subject;
+            EmailMessage.Body = new TextPart("plain")
+            {
+                Text = messageBody
+            };
+            using (var client = new SmtpClient())
+            {
+                await client.ConnectAsync("smtp.gmail.com", 587, false);
+                await client.AuthenticateAsync("noreply91203@gmail.com", "jyoxteofyiygapti");
+                await client.SendAsync(EmailMessage);
+                await client.DisconnectAsync(true);
             }
         }
     }

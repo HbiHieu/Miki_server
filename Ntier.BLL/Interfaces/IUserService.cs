@@ -20,5 +20,7 @@ namespace Ntier.BLL.Interfaces
         public Task<string> GenerateRefreshToken(User user);
 
         public Task<string> GetNewAccessTokenAsync( string userId );
+
+        public Task SendEmailAsync(string recipientEmail,  string subject, string messageBody );   
     }
 }

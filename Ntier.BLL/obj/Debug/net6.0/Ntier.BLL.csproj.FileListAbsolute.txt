@@ -32,3 +32,11 @@ C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.dll
 C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Debug\net6.0\refint\Ntier.BLL.dll
 C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.pdb
 C:\coode\Miki\Miki_Shop\server\Ntier.BLL\obj\Debug\net6.0\ref\Ntier.BLL.dll
+C:\Users\Tan\source\repos\Miki_server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.csproj.AssemblyReference.cache
+C:\Users\Tan\source\repos\Miki_server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tan\source\repos\Miki_server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.AssemblyInfoInputs.cache
+C:\Users\Tan\source\repos\Miki_server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.AssemblyInfo.cs
+C:\Users\Tan\source\repos\Miki_server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Tan\source\repos\Miki_server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.dll
+C:\Users\Tan\source\repos\Miki_server\Ntier.BLL\obj\Debug\net6.0\refint\Ntier.BLL.dll
+C:\Users\Tan\source\repos\Miki_server\Ntier.BLL\obj\Debug\net6.0\Ntier.BLL.pdb

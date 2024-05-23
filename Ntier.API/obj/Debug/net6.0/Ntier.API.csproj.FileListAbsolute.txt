@@ -166,3 +166,13 @@ C:\coode\Miki\Miki_Shop\server\Ntier.API\obj\Debug\net6.0\Ntier.API.genruntimeco
 C:\coode\Miki\Miki_Shop\server\Ntier.API\obj\Debug\net6.0\ref\Ntier.API.dll
 C:\coode\Miki\Miki_Shop\server\Ntier.API\bin\Debug\net6.0\Ntier.API.staticwebassets.runtime.json
 C:\coode\Miki\Miki_Shop\server\Ntier.API\bin\Debug\net6.0\BlazorInputFile.dll
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.csproj.AssemblyReference.cache
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.AssemblyInfoInputs.cache
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.AssemblyInfo.cs
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.csproj.CoreCompileInputs.cache
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.dll
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\refint\Ntier.API.dll
+C:\Users\Tan\source\repos\Miki_server\Ntier.API\obj\Debug\net6.0\Ntier.API.pdb

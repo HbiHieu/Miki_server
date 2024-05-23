@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "FiY6CLHmiOy6df0uvBE5MO/s2KlzRqspri0sFN+Bj9FXSyP5FlP5IkbuQUgBMwo4DuhzoQyhdZ4VlR4xb01ePQ==",
+  "dgSpecHash": "PKhssCgyc5zfncK0NOQAKNPiJIei2QVc7DiTaa4guEmw3SKHkPaLsFuNNvkLyz0cSwXArDi0YuBpcIxcTOZt9w==",
   "success": true,
-  "projectFilePath": "C:\\coode\\Miki\\Miki_Shop\\server\\Ntier.DTO\\Ntier.DTO.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Tan\\source\\repos\\Miki_server\\Ntier.DTO\\Ntier.DTO.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tan\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
+    "C:\\Users\\Tan\\.nuget\\packages\\mailkit\\4.6.0\\mailkit.4.6.0.nupkg.sha512",
+    "C:\\Users\\Tan\\.nuget\\packages\\mimekit\\4.6.0\\mimekit.4.6.0.nupkg.sha512",
+    "C:\\Users\\Tan\\.nuget\\packages\\system.formats.asn1\\8.0.0\\system.formats.asn1.8.0.0.nupkg.sha512",
+    "C:\\Users\\Tan\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.0\\system.security.cryptography.pkcs.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
