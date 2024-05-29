@@ -22,9 +22,9 @@ namespace Ntier.DAL.Repositories
             _context = context;
         }
 
-        public async Task<ICollection<User>> GetUsersAsync()
+        public async Task<ICollection<User>> GetUsersAsync( int pageSize , int pageIndex )
         {
-            var users = await _context.Users.ToListAsync();
+            var users = await _context.Users.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
             return users;
         }
 
@@ -36,30 +36,41 @@ namespace Ntier.DAL.Repositories
 
         public async Task<User?> AddUserAsync(UserRegisterDTO userDTO)
         {
-            string sql = "EXEC dbo.REGISTER_USER @UserId , @Email , @Password , @Name";
-            var result = await _context.Users.FromSqlRaw
-            (sql,
-            new SqlParameter("@UserId", userDTO.Id),
-            new SqlParameter("@Email", userDTO.Email),
-            new SqlParameter("@Password", userDTO.Password),
-            new SqlParameter("@Name", userDTO.Name)
-        ).ToListAsync();
-
-            User? user = result.FirstOrDefault();
-
+            User user = await _context.Users.FirstOrDefaultAsync( item => item.Id.Equals(userDTO.Id) );
+            if ( user != null )
+            {
+                user.Name = userDTO.Name;
+                user.Email = userDTO.Email;
+                user.Password = userDTO.Password == null ? user.Password : userDTO.Password;
+                user.PhoneNumber = userDTO.PhoneNumber;
+                await _context.SaveChangesAsync();
+            }    
+            else
+            {
+                string sql = "EXEC dbo.REGISTER_USER @UserId , @Email , @Password , @Name,@PhoneNumber";
+                var result = await _context.Users.FromSqlRaw
+                (sql,
+                new SqlParameter("@UserId", userDTO.Id),
+                new SqlParameter("@Email", userDTO.Email),
+                new SqlParameter("@Password", userDTO.Password),
+                new SqlParameter("@Name", userDTO.Name),
+                new SqlParameter("@PhoneNumber", userDTO.PhoneNumber)
+                ).ToListAsync();
+                user = result.FirstOrDefault();
+            }            
             return user;
         }
 
         public async Task<User?> CheckUserAsync(UserLoginDTO userLoginDTO)
         {
-            string sql = "EXEC [dbo].[LOGIN_USER] @Email , @Password ;";
-            var result = await _context.Users.FromSqlRaw
-            (sql,
-            new SqlParameter("@Email", userLoginDTO.Email),
-            new SqlParameter("@Password", userLoginDTO.Password)
-            ).ToListAsync();
+            //string sql = "EXEC [dbo].[LOGIN_USER] @Email , @Password ;";
+            //var result = await _context.Users.FromSqlRaw
+            //(sql,
+            //new SqlParameter("@Email", userLoginDTO.Email),
+            //new SqlParameter("@Password", userLoginDTO.Password)
+            //).ToListAsync();
 
-            User? user = result.FirstOrDefault();
+            User? user = await _context.Users.FirstOrDefaultAsync( item => item.Email.Equals(userLoginDTO.Email) && item.Password.Equals(userLoginDTO.Password) );
 
             return user;
         }

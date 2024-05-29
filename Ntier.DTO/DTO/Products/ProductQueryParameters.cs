@@ -14,5 +14,7 @@ namespace Ntier.DTO.DTO.Products
         public string order { get; set; }
 
         public int limit { get; set; } = 4;
+
+        public string keySearch { get; set; } = "";
     }
 }

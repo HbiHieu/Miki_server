@@ -13,6 +13,9 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using MailKit.Net.Smtp;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
+using MimeKit;
 
 namespace Ntier.BLL.Services
 {
@@ -27,9 +30,9 @@ namespace Ntier.BLL.Services
             _configuration = configuration;
         }
 
-        public async Task<ICollection<UserRegisterDTO>> GetUsersAsync()
+        public async Task<ICollection<UserRegisterDTO>> GetUsersAsync( int pageSize , int pageIndex )
         {
-            var users = await _userRepository.GetUsersAsync();
+            var users = await _userRepository.GetUsersAsync( pageSize , pageIndex );
             if ( users == null )
             {
                 throw new Exception();
@@ -72,6 +75,7 @@ namespace Ntier.BLL.Services
                     Name = user.Name,
                     Refresh_Token = refreshTk,
                     Role = user.Role ,
+                    PhoneNumber = user.PhoneNumber
                 };
                 return userDto;
             }
@@ -139,6 +143,24 @@ namespace Ntier.BLL.Services
             else
             {
                 throw new ArgumentException("UserId is invalid");
+            }
+        }
+        public async Task SendEmailAsync(string recipientEmail, string subject, string messageBody)
+        {
+            var EmailMessage = new MimeMessage();
+            EmailMessage.From.Add(new MailboxAddress("MiKi Shop", "noreply91203@gmail.com"));
+            EmailMessage.To.Add(new MailboxAddress("", recipientEmail));
+            EmailMessage.Subject = subject;
+            EmailMessage.Body = new TextPart("plain")
+            {
+                Text = messageBody
+            };
+            using (var client = new SmtpClient())
+            {
+                await client.ConnectAsync("smtp.gmail.com", 587, false);
+                await client.AuthenticateAsync("noreply91203@gmail.com", "jyoxteofyiygapti");
+                await client.SendAsync(EmailMessage);
+                await client.DisconnectAsync(true);
             }
         }
     }

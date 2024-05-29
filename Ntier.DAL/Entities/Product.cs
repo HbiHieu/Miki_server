@@ -21,6 +21,7 @@ namespace Ntier.DAL.Entities
         public DateTime? CreateAt { get; set; }
         public int? MinPrice { get; set; }
         public int? Quantity { get; set; }
+        public int? Status { get; set; }
 
         public virtual Category? Category { get; set; }
         public virtual ICollection<CartDetail> CartDetails { get; set; }

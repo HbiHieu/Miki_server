@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Ntier.DAL.Entities
 {
@@ -9,7 +10,7 @@ namespace Ntier.DAL.Entities
         {
             CartDetails = new HashSet<CartDetail>();
         }
-
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string? UserId { get; set; }
         public string? CreateAt { get; set; }

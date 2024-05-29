@@ -48,7 +48,7 @@ namespace Ntier.DAL.Context
                 entity.ToTable("CART");
 
                 entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
+                    .ValueGeneratedOnAdd()
                     .HasColumnName("ID");
 
                 entity.Property(e => e.CreateAt)
@@ -89,6 +89,7 @@ namespace Ntier.DAL.Context
                 entity.Property(e => e.Price).HasColumnName("PRICE");
 
                 entity.Property(e => e.Quantity).HasColumnName("QUANTITY");
+                entity.Property(e => e.SizeId).HasColumnName("SIZE_ID");
 
                 entity.Property(e => e.UserId)
                     .HasMaxLength(30)
@@ -117,7 +118,7 @@ namespace Ntier.DAL.Context
             {
                 entity.ToTable("CATEGORY");
 
-                entity.Property(e => e.Id).HasColumnName("ID");
+                entity.Property(e => e.Id).HasColumnName("ID").ValueGeneratedOnAdd();
 
                 entity.Property(e => e.Name)
                     .HasMaxLength(20)
@@ -129,7 +130,7 @@ namespace Ntier.DAL.Context
                 entity.ToTable("COMMENT");
 
                 entity.Property(e => e.Id)
-                    .ValueGeneratedNever()
+                    .ValueGeneratedOnAdd()
                     .HasColumnName("ID");
 
                 entity.Property(e => e.Content)
@@ -150,6 +151,8 @@ namespace Ntier.DAL.Context
                     .HasMaxLength(30)
                     .IsUnicode(false)
                     .HasColumnName("USER_ID");
+
+                entity.Property(e => e.Rating).HasColumnName("RATING");
 
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.Comments)

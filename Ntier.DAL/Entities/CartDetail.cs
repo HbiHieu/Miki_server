@@ -11,6 +11,7 @@ namespace Ntier.DAL.Entities
         public int? Price { get; set; }
         public string? UserId { get; set; }
         public string? CreateAt { get; set; }
+        public int? SizeId { get; set; }
 
         public virtual Cart Cart { get; set; } = null!;
         public virtual Product Product { get; set; } = null!;

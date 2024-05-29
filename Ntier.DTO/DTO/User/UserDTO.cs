@@ -19,5 +19,6 @@ namespace Ntier.DTO.DTO.User
         public DateTime Expire_At { get; set; }
 
         public string Refresh_Token { get; set; } 
+        public int cartId { get; set; }
     }
 }

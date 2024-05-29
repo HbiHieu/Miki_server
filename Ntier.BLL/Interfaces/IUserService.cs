@@ -10,7 +10,7 @@ namespace Ntier.BLL.Interfaces
 {
     public interface IUserService
     {
-        public Task<ICollection<UserRegisterDTO>> GetUsersAsync();
+        public Task<ICollection<UserRegisterDTO>> GetUsersAsync( int pageSize , int pageIndex );
         public Task RegisterUserAsync(UserRegisterDTO userDTO);
 
         public Task<UserDTO?> LoginUserAsync(UserLoginDTO userDTO);
@@ -20,5 +20,7 @@ namespace Ntier.BLL.Interfaces
         public Task<string> GenerateRefreshToken(User user);
 
         public Task<string> GetNewAccessTokenAsync( string userId );
+
+        public Task SendEmailAsync(string recipientEmail, string subject, string messageBody);
     }
 }

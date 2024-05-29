@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Ntier.DAL.Repositories
@@ -73,6 +74,7 @@ namespace Ntier.DAL.Repositories
                     CategoryId = productToAdd.categoryId ,
                     MinPrice = productToAdd.MinPrice ,
                     CreateAt = DateTime.Now ,
+                    Status = 1
                 };
                 await _context.Products.AddAsync( product );
                 await _context.SaveChangesAsync();
@@ -128,11 +130,41 @@ namespace Ntier.DAL.Repositories
                 }
                 if (queryParameters.order == "desc")
                 {
-                    products = _context.Products.OrderByDescending(orderBy).Skip( (queryParameters.page - 1) * queryParameters.limit).Take(queryParameters.limit).ToList();
+                    products = _context.Products.OrderByDescending(orderBy).Skip( (queryParameters.page - 1) * queryParameters.limit).Take(queryParameters.limit).Where(item => item.Status == 1 && item.Name.Contains(queryParameters.keySearch)).ToList();
                 }
                 else
                 {
-                products = _context.Products.OrderBy(orderBy).Skip((queryParameters.page - 1) * queryParameters.limit).Take(queryParameters.limit).ToList();
+                    var productsQuery = _context.Products
+                                    .Where(item => item.Status == 1);
+
+                    var productList = await productsQuery.ToListAsync();
+
+                    //Chuẩn hóa keySearch và lọc các sản phẩm 
+                    var keyToSearchNormalized = Regex.Replace(queryParameters.keySearch.ToLower(), @"\s+", " ");
+                    var filteredProducts = productList.Where(item =>
+                    {
+                        var itemNameNormalized = Regex.Replace(item.Name.ToLower(), @"\s+", " ");
+                        return itemNameNormalized.Contains(keyToSearchNormalized);
+                    }).ToList();
+
+                    IOrderedEnumerable<Product> sortedProducts;
+                    if (queryParameters.sortBy == "price")
+                    {
+                        sortedProducts = queryParameters.order == "desc" ?
+                                         filteredProducts.OrderByDescending(p => p.MinPrice) :
+                                         filteredProducts.OrderBy(p => p.MinPrice);
+                    }
+                    else 
+                    {
+                        sortedProducts = queryParameters.order == "desc" ?
+                                         filteredProducts.OrderByDescending(p => p.Name) :
+                                         filteredProducts.OrderBy(p => p.Name);
+                    }
+
+                    products = sortedProducts
+                                        .Skip((queryParameters.page - 1) * queryParameters.limit)
+                                        .Take(queryParameters.limit)
+                                        .ToList();
                 }
                 foreach (var product in products)
                 {
@@ -154,7 +186,7 @@ namespace Ntier.DAL.Repositories
         {
             try
             {
-                var product = await _context.Products.SingleOrDefaultAsync( product => product.Id == productId );
+                var product = await _context.Products.SingleOrDefaultAsync( product => product.Id == productId && product.Status == 1 );
                 _context.Entry(product)
                         .Collection(p => p.ProductImages)
                         .Load();
@@ -175,8 +207,9 @@ namespace Ntier.DAL.Repositories
             {
                 foreach( var productId in productsId )
                 {
-                    await _context.Database.ExecuteSqlRawAsync($@"DELETE FROM PRODUCT_SIZE_DETAIL WHERE PRODUCT_ID = '{productId}'");
-                    await _context.Database.ExecuteSqlRawAsync($@"DELETE FROM PRODUCT WHERE ID = '{productId}'");
+                    //await _context.Database.ExecuteSqlRawAsync($@"DELETE FROM PRODUCT_SIZE_DETAIL WHERE PRODUCT_ID = '{productId}'");
+                    //await _context.Database.ExecuteSqlRawAsync($@"DELETE FROM PRODUCT WHERE ID = '{productId}'");
+                    await _context.Database.ExecuteSqlRawAsync($@"UPDATE PRODUCT SET [STATUS] = 0 WHERE ID = '{productId}'");
                 }    
             }
             catch(Exception ex)
