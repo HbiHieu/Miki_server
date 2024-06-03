@@ -31,7 +31,7 @@ namespace Ntier.API.Controllers
             try
             {
                 string connectionString = _configuration.GetConnectionString("SQL");
-                var item = await _shopContext.CartDetails.FirstOrDefaultAsync(item => item.ProductId == product.productID && item.SizeId == product.SizeId);
+                var item = await _shopContext.CartDetails.FirstOrDefaultAsync(item => item.ProductId == product.productID && item.UserId.Equals(product.userId) && item.SizeId == product.SizeId);
                 if (item != null)
                 {
                     item.Quantity = item.Quantity + 1;

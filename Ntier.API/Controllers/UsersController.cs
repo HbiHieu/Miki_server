@@ -26,12 +26,13 @@ namespace Ntier.API.Controllers
             try
             {
                 var users = await _userService.GetUsersAsync(pageSize, pageIndex);
+                var total = await _shopContext.Users.CountAsync();
                 return Ok(new
                 {
                     data = users,
                     pagination = new
                     {
-                        _totalRows = users.Count,
+                        _totalRows = total,
                         _page = pageIndex,
                         _limit = pageSize
                     }

@@ -29,12 +29,13 @@ namespace Ntier.API.Controllers
               return NotFound();
           }
           var categories = await _context.Categories.Skip((pageIndex - 1) * pageSize).Take(pageSize).ToListAsync();
+          var total = await _context.CartDetails.CountAsync();
             return Ok(new
             {
                 data = categories,
                 pagination = new
                 {
-                    _totalRows = categories.Count,
+                    _totalRows = total,
                     _page = pageIndex,
                     _limit = pageSize
                 }

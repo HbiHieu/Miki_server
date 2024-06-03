@@ -16,7 +16,7 @@ namespace Ntier.DAL.Interfaces
         public Task UpdateProductSizeDetailAsync( ICollection<StockDTO> stocks, string productId);
         public Task<ICollection<Product>?>GetProductsAsync( ProductQueryParameters queryParameters );
 
-        public Task<int> GetQuantityProducts();
+        public Task<int> GetQuantityProducts( string keySearch );
 
         public Task<Product> GetProductByIdAsync( string productId );
 

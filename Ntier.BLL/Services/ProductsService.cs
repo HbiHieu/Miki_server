@@ -80,7 +80,7 @@ namespace Ntier.BLL.Services
                         pictures = _mapper.Map<ICollection<ImageDTO>>(product.ProductImages),
                     }); ;
                 }
-                var totalRow = await _productsRepository.GetQuantityProducts();
+                var totalRow = await _productsRepository.GetQuantityProducts( queryParameters.keySearch );
                 ProductsPagination productsPagination = new ProductsPagination
                 {
                     data = productDTOs ,

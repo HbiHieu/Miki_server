@@ -106,11 +106,35 @@ namespace Ntier.DAL.Repositories
             }
         }
 
-        public async Task<int> GetQuantityProducts()
+        public async Task<int> GetQuantityProducts( string keySearch )
         {
             try
             {
-                var result = await _context.Products.CountAsync();
+                var result = 0;
+                if ( keySearch.Equals("Lắc") )
+                {
+                    var p = await _context.Products.Where( item => item.CategoryId == 16 ).ToListAsync();
+                    result = p.Count();
+                }    
+                else if (keySearch.Equals("Dây chuyền"))
+                {
+                    var d = await _context.Products.Where(item => item.CategoryId == 14).ToListAsync();
+                    result = d.Count();
+                }
+                else if (keySearch.Equals("Nhẫn"))
+                {
+                    var e = await _context.Products.Where(item => item.CategoryId == 15).ToListAsync();
+                    result = e.Count();
+                }
+                else if (keySearch.Equals("Bông tai"))
+                {
+                    var f = await _context.Products.Where(item => item.CategoryId == 17).ToListAsync();
+                    result = f.Count();
+                }
+                else
+                {
+                result = await _context.Products.CountAsync();
+                }
                 return result;
             }
             catch (Exception ex) { 
